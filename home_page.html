@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Structure</title>
+    <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+
+    <!-- SIDEBAR STUCTURE -->
+    <aside class="sidebar">
+        <div>
+            <div class="brand-area">Application Logo</div>
+            <ul class="nav-links">
+                <li class="nav-item active"><div class="icon-placeholder"></div> Menu Item 1</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 2</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 3</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 4</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 5</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 6</li>
+                <li class="nav-item"><div class="icon-placeholder"></div> Menu Item 7</li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="user-avatar-placeholder"></div>
+            <div>
+                <div style="font-size: 14px; font-weight: 600;">Profile Block</div>
+                <div style="font-size: 11px; color: #b3b8d3;">Subtitle</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN INTERFACE DISPLAY -->
+    <main class="main-wrapper">
+        
+        <!-- HEADER ROW -->
+        <header class="top-navbar">
+            <div class="header-title">Dashboard View</div>
+            <div class="header-controls">
+                <div class="search-placeholder">Search Field...</div>
+                <div class="top-icon"></div>
+                <div class="top-icon"></div>
+            </div>
+        </header>
+
+        <!-- DASHBOARD CONTAINER CANVAS -->
+        <section class="dashboard-view">
+            
+            <!-- TOP 4 STATS CARDS -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon-box"></div>
+                    <div class="metric-info">
+                        <div class="metric-title">Metric Primary</div>
+                        <div class="metric-value">0000</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon-box"></div>
+                    <div class="metric-info">
+                        <div class="metric-title">Metric Secondary</div>
+                        <div class="metric-value">0000</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon-box"></div>
+                    <div class="metric-info">
+                        <div class="metric-title">Metric Tertiary</div>
+                        <div class="metric-value">0000</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon-box"></div>
+                    <div class="metric-info">
+                        <div class="metric-title">Metric Financial</div>
+                        <div class="metric-value">$0,000</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN QUADRANT BLOCKS (2x2 Grid Layout) -->
+            <div class="content-grid">
+                
+                <!-- TOP LEFT: BLOCK OVERVIEW -->
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <div class="panel-title">Overview Section</div>
+                        <div class="panel-action">Filter dropdown</div>
+                    </div>
+                    <div class="sub-flex-row">
+                        <div class="sub-card-half">
+                            <div class="skeleton-line" style="margin-bottom: 15px;"></div>
+                            <div class="skeleton-line short" style="margin-bottom: 30px;"></div>
+                            <div class="skeleton-line" style="height: 6px; width: 100%;"></div>
+                        </div>
+                        <div class="sub-card-half">
+                            <div class="skeleton-line" style="margin-bottom: 15px;"></div>
+                            <div class="skeleton-line short" style="margin-bottom: 30px;"></div>
+                            <div class="skeleton-line" style="height: 6px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOP RIGHT: LIST BLOCK -->
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <div class="panel-title">Data List Panel</div>
+                        <div class="panel-action">View All</div>
+                    </div>
+                    <table class="wireframe-table">
+                        <thead>
+                            <tr>
+                                <th>Col 1</th>
+                                <th>Col 2</th>
+                                <th>Col 3</th>
+                                <th>Col 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- BOTTOM LEFT: ALERTS BLOCK -->
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <div class="panel-title">Status/Notification Panel</div>
+                        <div class="panel-action">View All</div>
+                    </div>
+                    <table class="wireframe-table">
+                        <thead>
+                            <tr>
+                                <th>Item Label</th>
+                                <th>Category</th>
+                                <th>Value</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- BOTTOM RIGHT: USER MANAGMENT BLOCK -->
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <div class="panel-title">User Profiles Structure</div>
+                        <div class="panel-action" style="background-color: #3f459b; color: white; padding: 6px 12px; border-radius: 6px;">+ Action Button</div>
+                    </div>
+                    <table class="wireframe-table">
+                        <thead>
+                            <tr>
+                                <th>Identity</th>
+                                <th>Contact</th>
+                                <th>Role Tier</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line"></div></td>
+                                <td><div class="skeleton-line pill"></div></td>
+                                <td><div class="skeleton-line short"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

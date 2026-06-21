@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_page.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Account Login</h2>
+    <div id="errorBox" class="message error" style="display:none"></div>
+    <div id="successBox" class="message success" style="display:none"></div>
+    <form id="loginForm" action="/login-endpoint" method="POST">
+        
+        <div class="input-group">
+            <label for="userId">User ID</label>
+            <input type="text" id="userId" name="userId" placeholder="Enter your ID" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="checkbox-group">
+            <label><strong>Select your role:</strong></label>
+            <label>
+                <input type="checkbox" name="role" value="owner" onclick="selectOnlyOne(this)"> Owner
+            </label>
+            <label>
+                <input type="checkbox" name="role" value="employee" onclick="selectOnlyOne(this)"> Employee
+            </label>
+            <label>
+                <input type="checkbox" name="role" value="customer" onclick="selectOnlyOne(this)"> Customer
+            </label>
+        </div>
+
+        <button type="submit" class="login-btn">Log In</button>
+    </form>
+</div>
+
+<script src="login_page.js"></script>
+</body>
+</html>
