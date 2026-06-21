@@ -263,25 +263,28 @@ body {
     .sidebar {
         width: 100%;
         height: auto;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
         padding: 15px 20px;
         order: -1;
+        gap: 10px;
     }
 
     .brand-area {
         padding: 0;
-        margin-right: 30px;
+        margin: 0;
         font-size: 16px;
         border-bottom: none;
     }
 
     .nav-links {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 0;
         flex-grow: 0;
-        gap: 5px;
+        gap: 8px;
     }
 
     .nav-item {
@@ -379,17 +382,18 @@ body {
 /* MOBILE PHONES (480px and below) */
 @media (max-width: 480px) {
     .sidebar {
-        overflow-x: auto;
+        overflow: visible;
+        padding: 15px 15px 10px;
     }
 
     .brand-area {
-        margin-right: 20px;
+        margin: 0 0 10px;
         font-size: 14px;
-        white-space: nowrap;
+        white-space: normal;
     }
 
     .nav-links {
-        gap: 2px;
+        gap: 6px;
     }
 
     .nav-item {
